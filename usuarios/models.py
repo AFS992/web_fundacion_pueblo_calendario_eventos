@@ -9,6 +9,9 @@ class Usuario(AbstractUser):
     localidad_usuario=models.CharField(max_length=50)
     telefono_usuario=PhoneNumberField(unique=True, null=False,blank=False)
 
+    
+    
+
 from calendario.models import Evento
 
 class AsistenciaUsuario(models.Model):
