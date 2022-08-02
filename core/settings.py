@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#=============================
+AUTH_USER_MODEL = 'usuarios.Usuario'
+
 
 # Application definition
 
@@ -37,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'usuarios',
+    'phonenumber_field', # Biblioteca de django pra manejar números telefónicos.
+    'calendario'
 ]
 
 MIDDLEWARE = [
@@ -75,14 +81,16 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'databaseName',
-        'USER': 'databaseUser',
-        'PASSWORD': 'databasePassword',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'web_calendario',
+        'USER': 'postgres',
+        'PASSWORD': 'Historias',
         'HOST': 'localhost',
-        'PORT': 'portNumber',
+        'PORT': '5432'
+        },
     }
-}
+
+
 
 
 # Password validation
