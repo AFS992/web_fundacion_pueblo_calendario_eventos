@@ -83,9 +83,9 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'web_calendario',
+        'NAME': '',
         'USER': 'postgres',
-        'PASSWORD': 'Historias',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '5432'
         },
