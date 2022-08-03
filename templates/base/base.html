@@ -40,7 +40,13 @@
               
               
             </ul>
-            <button type="button" class="btn btn-outline-light">Ingresar</button>
+            
+            {% if user.is_authenticated %}
+              <button type="button" class="btn btn-outline-light">Salir</button>
+            {% else %}
+              <button type="button" class="btn btn-outline-light">Ingresar</button>
+            {% endif %}
+
           </div>
         </div>
       </nav>

@@ -12,7 +12,7 @@ class Categoria(models.Model):
 class Evento(models.Model):
     titulo_evento=models.CharField(max_length=50)
     fecha_evento=models.DateField()
-    hora_evento=models.CharField(max_length=4)
+    hora_evento=models.CharField(max_length=5)
     modalidad_evento=models.CharField(max_length=50)
     descripcion_evento=models.TextField()
     id_categoria=models.ForeignKey(Categoria, on_delete=models.CASCADE)

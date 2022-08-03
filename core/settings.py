@@ -30,6 +30,10 @@ ALLOWED_HOSTS = []
 #=============================
 AUTH_USER_MODEL = 'usuarios.Usuario'
 
+LOGIN_REDIRECT_URL = '/admin'
+
+#=============================
+
 
 # Application definition
 
@@ -83,9 +87,9 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '',
+        'NAME': 'web_calendario',
         'USER': 'postgres',
-        'PASSWORD': '',
+        'PASSWORD': 'Historias',
         'HOST': 'localhost',
         'PORT': '5432'
         },
