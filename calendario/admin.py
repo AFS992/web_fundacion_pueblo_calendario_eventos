@@ -1,5 +1,5 @@
 from django.contrib import admin
-from  model.s import Categoria, Evento
+from  . models import Categoria, Evento
 
 # Register your models here.
 #@admin.register(Categoria)
