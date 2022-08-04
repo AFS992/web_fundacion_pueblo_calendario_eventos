@@ -1,5 +1,8 @@
-<!doctype html>
 {%  load static %}
+
+
+<!doctype html>
+
 <html lang="en">
   <head>
     <title>Base</title>
@@ -42,9 +45,17 @@
             </ul>
             
             {% if user.is_authenticated %}
-              <button type="button" class="btn btn-outline-light">Salir</button>
+              <form>
+                <a href="#">
+                <button type="button" class="btn btn-outline-light">Salir</button>
+                </a>
+              </form>
             {% else %}
-              <button type="button" class="btn btn-outline-light">Salir</button>
+              <form>
+                <a href="{% url 'login' %}">
+                <button type="button" class="btn btn-outline-light">Ingresar</button>
+                </a>
+              </form>
             {% endif %}
 
           </div>

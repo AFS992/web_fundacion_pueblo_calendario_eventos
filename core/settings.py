@@ -92,7 +92,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'web_calendario',
         'USER': 'postgres',
-        'PASSWORD': '31391153',
+        'PASSWORD': 'Historias',
         'HOST': 'localhost',
         'PORT': '5432'
         },
