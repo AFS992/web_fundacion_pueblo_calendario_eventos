@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Usuario, AsistenciaUsuario
+from .models import Usuario
 
 
 
@@ -12,9 +12,6 @@ class UsuarioAdmin(admin.ModelAdmin):
     ordering=('username',) #puede ordenar los nombres de ususarios según necesidad.
     search_fields=('username',) #buscador para admin.
     list_display_links=('username',)
+    list_per_page=20
+    
 
-@admin.register(AsistenciaUsuario)
-
-class AsistenciaUsuarioAdmin(admin.ModelAdmin):
-    list_display=('id', 'id_usuario', 'id_evento', 'id_usuario_asiste')
-    list_filter=('id_usuario_asiste','id_evento')

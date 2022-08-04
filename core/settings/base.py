@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'usuarios',
     'phonenumber_field', # Biblioteca de django pra manejar números telefónicos.
     'calendario',
+    'asistencias',
     
 ]
 
@@ -84,19 +85,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'core.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'web_calendario',
-        'USER': 'postgres',
-        'PASSWORD': 'Historias',
-        'HOST': 'localhost',
-        'PORT': '5432'
-        },
-    }
 
 
 
@@ -136,7 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [STATIC_DIR,]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
