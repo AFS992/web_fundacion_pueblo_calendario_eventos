@@ -41,6 +41,7 @@ LOGIN_REDIRECT_URL = '/admin'
 # Application definition
 
 INSTALLED_APPS = [
+    "admin_interface",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -51,8 +52,13 @@ INSTALLED_APPS = [
     'phonenumber_field', # Biblioteca de django pra manejar números telefónicos.
     'calendario',
     'asistencias',
+    "colorfield",
     
 ]
+
+#================================ para personalizar el admin de django.
+X_FRAME_OPTIONS = "SAMEORIGIN"
+#================================
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
