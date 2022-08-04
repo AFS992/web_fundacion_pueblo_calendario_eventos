@@ -1,4 +1,5 @@
 <!doctype html>
+{%  load static %}
 <html lang="en">
   <head>
     <title>Base</title>
@@ -11,18 +12,17 @@
 
   </head>
   <body> 
- 
+    
     <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
         <!-- Logo-->  
           <a class="navbar-brand" href="#">
         
-            <img src="C:\Users\GONZALO\Desktop\web_calendario\web_fundacion_pueblo_calendario_eventos\templates\img\Home.png" alt="logo">
+            <img src="{% static "img\Home.png"%}" alt="logo">
         
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
